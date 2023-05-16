@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background: rgb(73, 173, 235);
+  background: linear-gradient(
+    184deg,
+    rgba(73, 173, 235, 1) 26%,
+    rgba(12, 101, 157, 1) 86%
+  );
+}
+.app {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5%;
+  gap: 2rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+input {
+  height: 2rem;
+  width: 30rem;
+  border: 1px solid #0000;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  height: 1.5rem;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.data-weather {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.container-weather {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+}
+
+p.temperature {
+  font-size: 2rem;
+}
+
+.icons-weather {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-left: 20px;
+}
+
+.container-weather img {
+  width: 80%;
+}
+
+@media (max-width: 992px) {
+  input {
+    width: 100%;
+  }
+
+  .app {
+    padding: 1rem;
+  }
+}
