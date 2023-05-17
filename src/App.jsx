@@ -55,7 +55,10 @@ export default function App() {
         {typeof result.main !== "undefined" ? (
           <div className="data-weather">
             <div className="container-weather">
-              <p>Today, 12 September</p>
+              <p>{new Date().toLocaleDateString()}</p>
+              <img
+                src={`https://openweathermap.org/img/wn/${result.weather[0].icon}.png`}
+              />
               <h3>
                 <FiMapPin /> {result.name}
               </h3>

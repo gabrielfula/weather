@@ -58,6 +58,7 @@ button {
 .container-weather {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.2);
@@ -73,15 +74,8 @@ p.temperature {
   font-size: 2rem;
 }
 
-.icons-weather {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding-left: 20px;
-}
-
 .container-weather img {
-  width: 80%;
+  width: 50%;
 }
 
 @media (max-width: 992px) {
@@ -91,5 +85,9 @@ p.temperature {
 
   .app {
     padding: 1rem;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 }
