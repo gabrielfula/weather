@@ -54,6 +54,7 @@ export default function App() {
 
         {typeof result.main !== "undefined" ? (
           <div className="data-weather">
+            {result.length === 0 && <span>Carregando...</span>}
             <div className="container-weather">
               <p>{new Date().toLocaleDateString()}</p>
               <img
